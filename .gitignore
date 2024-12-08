@@ -1,0 +1,6 @@
+.vscode
+cspell.config.yaml
+
+log/*
+
+config.json
