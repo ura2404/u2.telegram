@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Europe/Moscow');
 
-define( 'TGROOT', realpath(__DIR__.'/..') );
+define( 'TGROOT', realpath(__DIR__.'/../..') );
 
 spl_autoload_register(function($ClassName){
   if(class_exists($ClassName)) return;
