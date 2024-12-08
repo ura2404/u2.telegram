@@ -6,7 +6,7 @@ define( 'TGROOT', realpath(__DIR__.'/../..') );
 spl_autoload_register(function($ClassName){
   if(class_exists($ClassName)) return;
 
-  if ( strpos( $ClassName, 'Tg\\' ) === 0 ) $ClassFilePath = TGROOT.'/core/U2.Telegram'.str_replace( '\\', '/', substr( $ClassName, 2 ) ).'.class.php';
+  if ( strpos( $ClassName, 'Tg\\' ) === 0 ) $ClassFilePath = TGROOT.'/core/u2.Telegram'.str_replace( '\\', '/', substr( $ClassName, 2 ) ).'.class.php';
                                        else $ClassFilePath = TGROOT.'/core/'.           str_replace( '\\', '/', $ClassName ).             '.class.php';
 
   // tgdump( 'TGROOT >'.TGROOT.'<' );
